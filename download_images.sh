@@ -3,11 +3,11 @@
 output_dir=""
 url_file=""
 while getopts "f:u:" opt; do
-    case "$opt" in
-    f)  output_dir=$OPTARG
-        ;;
-		u)	url_file=$OPTARG
-				;;
+	case "$opt" in
+	f)  output_dir=$OPTARG
+		;;
+	u)	url_file=$OPTARG
+		;;
     esac
 done
 
