@@ -24,6 +24,12 @@ fi
 i=0
 while read line
 do	
-	wget $line -O "image_$i.jpg"
-	i=$((i + 1))
+	wget $line -t 4 -O "image_$i.jpg"
+	ret="$?"
+	echo $ret
+	if [ $ret -eq 0 ]; then
+		i=$((i + 1))
+	else
+		rm "image_$i.jpg"
+	fi
 done < "../$url_file"
