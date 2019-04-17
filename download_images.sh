@@ -24,7 +24,7 @@ fi
 i=0
 while read line
 do	
-	wget $line -q -t 4 -O "image_$i.jpg"
+	wget $line -q -T 10 -t 4 -O "image_$i.jpg"
 	wget_ret="$?"
 	if [ $wget_ret -eq 0 ]; then
 		file_output=$(file -b --mime-type "image_$i.jpg")
