@@ -48,7 +48,7 @@ while getopts ":d:f:h" opt; do
 	case "$opt" in
 	d)	directory=$OPTARG
 		;;
-	f)  categories_file=$OPTARG
+	f)	categories_file=$OPTARG
 		;;
 	h)	usage
 		;;
