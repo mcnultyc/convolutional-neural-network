@@ -2,10 +2,6 @@
 
 usage(){ echo "usage: ./download_categories.sh -d <directory> -f <filename>" >&2; exit 1; } 
 
-test_func(){
-  echo $(($1 + 3))
-}
-
 download_files(){  
   local i=0
   while read line
