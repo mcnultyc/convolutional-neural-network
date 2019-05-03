@@ -1,2 +1,5 @@
-husky_urls.txt huskys
 dalmatian_urls.txt dalmatians
+husky_urls.txt huskys
+newfoundland_urls.txt newfoundlands
+germansheperd_urls.txt germansheperds
+hyenadog_urls.txt hyenadogs
